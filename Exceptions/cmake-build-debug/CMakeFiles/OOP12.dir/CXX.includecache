@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/oksanaspodarik/Documents/CLionProjects/OOP12/MyException.h
+string
+-
+
+/Users/oksanaspodarik/Documents/CLionProjects/OOP12/MyMatrix.cpp
+MyMatrix.h
+/Users/oksanaspodarik/Documents/CLionProjects/OOP12/MyMatrix.h
+
+/Users/oksanaspodarik/Documents/CLionProjects/OOP12/MyMatrix.h
+iostream
+-
+exception
+-
+limits
+-
+iomanip
+-
+MyException.h
+/Users/oksanaspodarik/Documents/CLionProjects/OOP12/MyException.h
+
+/Users/oksanaspodarik/Documents/CLionProjects/OOP12/main.cpp
+MyMatrix.h
+/Users/oksanaspodarik/Documents/CLionProjects/OOP12/MyMatrix.h
+
