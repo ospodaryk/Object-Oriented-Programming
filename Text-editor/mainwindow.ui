@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">text-colour:rgb(0, 0, 0)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>270</y>
+      <width>451</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>811</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>PT Mono</family>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::ActionsContextMenu</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionNew"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+    <addaction name="separator"/>
+    <addaction name="actionPaste_photo"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCopy"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionPaste"/>
+    <addaction name="separator"/>
+    <addaction name="actionUndo"/>
+   </widget>
+   <widget class="QMenu" name="menutext">
+    <property name="title">
+     <string>Text</string>
+    </property>
+    <widget class="QMenu" name="menuColour">
+     <property name="title">
+      <string>Colour</string>
+     </property>
+     <addaction name="actionRed"/>
+     <addaction name="actionGreen"/>
+     <addaction name="actionBlue"/>
+     <addaction name="actionYellow"/>
+     <addaction name="actionWhite"/>
+    </widget>
+    <widget class="QMenu" name="menuStyle">
+     <property name="title">
+      <string>Style</string>
+     </property>
+     <addaction name="actionBold_2"/>
+     <addaction name="actionCursive_2"/>
+     <addaction name="actionNormal"/>
+    </widget>
+    <widget class="QMenu" name="menuFont">
+     <property name="title">
+      <string>Font</string>
+     </property>
+     <addaction name="actionTimes_New_Roman"/>
+     <addaction name="actionHelvetica"/>
+    </widget>
+    <addaction name="menuStyle"/>
+    <addaction name="separator"/>
+    <addaction name="menuColour"/>
+    <addaction name="separator"/>
+    <addaction name="menuFont"/>
+   </widget>
+   <widget class="QMenu" name="menughjk">
+    <property name="title">
+     <string>Size</string>
+    </property>
+    <addaction name="action12"/>
+    <addaction name="action14"/>
+    <addaction name="action18"/>
+    <addaction name="action20"/>
+    <addaction name="action22"/>
+    <addaction name="action24"/>
+    <addaction name="action26"/>
+    <addaction name="action30"/>
+   </widget>
+   <widget class="QMenu" name="menuSize_of_object">
+    <property name="title">
+     <string>Size of object</string>
+    </property>
+    <addaction name="actionOriginal_size"/>
+    <addaction name="separator"/>
+    <addaction name="actionBigger"/>
+    <addaction name="actionSmaller"/>
+   </widget>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionLast_word"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menutext"/>
+   <addaction name="menughjk"/>
+   <addaction name="menuSize_of_object"/>
+   <addaction name="menuMenu"/>
+  </widget>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/new/copy.png</normaloff>:/new/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset>
+     <normaloff>pngtree-vector-cut-icon-png-image_322141.jpg</normaloff>
+     <normalon>:/new/pngtree-vector-cut-icon-png-image_322141.jpg</normalon>pngtree-vector-cut-icon-png-image_322141.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/new/paste-47-1123495.png</normaloff>:/new/paste-47-1123495.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Eхit</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionyellow">
+   <property name="text">
+    <string>yellow</string>
+   </property>
+  </action>
+  <action name="actionPaste_photo">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/new/paste-47-1123495.png</normaloff>:/new/paste-47-1123495.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste object</string>
+   </property>
+  </action>
+  <action name="action12">
+   <property name="text">
+    <string>12</string>
+   </property>
+  </action>
+  <action name="action14">
+   <property name="text">
+    <string>14</string>
+   </property>
+  </action>
+  <action name="action18">
+   <property name="text">
+    <string>18</string>
+   </property>
+  </action>
+  <action name="action20">
+   <property name="text">
+    <string>20</string>
+   </property>
+  </action>
+  <action name="action22">
+   <property name="text">
+    <string>22</string>
+   </property>
+  </action>
+  <action name="action24">
+   <property name="text">
+    <string>24</string>
+   </property>
+  </action>
+  <action name="action26">
+   <property name="text">
+    <string>26</string>
+   </property>
+  </action>
+  <action name="action30">
+   <property name="text">
+    <string>40</string>
+   </property>
+  </action>
+  <action name="actionColour">
+   <property name="text">
+    <string>Colour</string>
+   </property>
+  </action>
+  <action name="actionRed">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/new/Downloads/IMG_8762.PNG</normaloff>:/new/Downloads/IMG_8762.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Red</string>
+   </property>
+  </action>
+  <action name="actionGreen">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/new/Downloads/IMG_8760.PNG</normaloff>:/new/Downloads/IMG_8760.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Green</string>
+   </property>
+  </action>
+  <action name="actionBlue">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/new/Downloads/IMG_8761.PNG</normaloff>:/new/Downloads/IMG_8761.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Blue</string>
+   </property>
+  </action>
+  <action name="actionYellow">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/new/Downloads/IMG_8763.PNG</normaloff>:/new/Downloads/IMG_8763.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Yellow</string>
+   </property>
+  </action>
+  <action name="actionWhite">
+   <property name="icon">
+    <iconset>
+     <normalon>:/new/Downloads/IMG_8777.PNG</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>White</string>
+   </property>
+  </action>
+  <action name="actionBold_2">
+   <property name="text">
+    <string>Bold</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionOriginal_size">
+   <property name="text">
+    <string>Original size</string>
+   </property>
+  </action>
+  <action name="actionCursive_2">
+   <property name="text">
+    <string>Cursive</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica</family>
+     <italic>true</italic>
+    </font>
+   </property>
+  </action>
+  <action name="actionTimes_New_Roman">
+   <property name="text">
+    <string>Times New Roman</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionHelvetica">
+   <property name="text">
+    <string>Helvetica</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Helvetica</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionBigger">
+   <property name="text">
+    <string>Bigger</string>
+   </property>
+  </action>
+  <action name="actionSmaller">
+   <property name="text">
+    <string>Smaller</string>
+   </property>
+  </action>
+  <action name="actionNormal">
+   <property name="text">
+    <string>Normal</string>
+   </property>
+  </action>
+  <action name="actionLast_word">
+   <property name="text">
+    <string>Last word</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

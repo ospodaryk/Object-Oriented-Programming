@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/new">
+        <file>pngtree-vector-cut-icon-png-image_322141.jpg</file>
+        <file>paste-47-1123495.png</file>
+        <file>copy.png</file>
+        <file>../../../Downloads/IMG_8763.PNG</file>
+        <file>../../../Downloads/IMG_8762.PNG</file>
+        <file>../../../Downloads/IMG_8761.PNG</file>
+        <file>../../../Downloads/IMG_8760.PNG</file>
+        <file>../../../Downloads/IMG_8777.PNG</file>
+    </qresource>
+</RCC>
